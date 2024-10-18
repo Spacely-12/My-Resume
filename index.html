@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HelpDesk Frontend</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header and Navigation -->
+
+    <header>
+      <div class="logo">
+        <img src="/images/EOCOLOGO.png" alt="HelpDesk Logo" />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="#submit-ticket">Submit Ticket</a></li>
+
+          <li><a href="#faq">FAQ</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+
+    <main>
+      <!-- Submit a Ticket Section -->
+
+      <section id="submit-ticket">
+        <h2 style="text-align: center;">ECONOMIC AND ORGANISED CRIME OFFICE HELP DESK</h2>
+
+        <form id="ticket-form">
+          <label for="name">Name:</label>
+
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject:</label>
+
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="issue">Issue Description:</label>
+
+          <textarea id="issue" name="issue" rows="5" required></textarea>
+
+          <button type="submit">Submit Ticket</button>
+        </form>
+      </section>
+
+      <!-- FAQ Section -->
+
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>How can I submit a ticket?</h3>
+
+          <p>
+            You can submit a ticket by filling out the form above with your
+            issue details.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is the response time for tickets?</h3>
+
+          <p>Our typical response time is 24-48 hours.</p>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="contact">
+      <p>Contact us: support@helpdesk.com | 123-456-7890</p>
+    </footer>
+
+    <!-- partial -->
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,97 +1,100 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>HelpDesk Frontend</title>
-
+    <title>Your Name - Resume</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <!-- Header and Navigation -->
+</head>
+<body>
+    <!-- Header -->
 
     <header>
-      <div class="logo">
-        <img src="/images/EOCOLOGO.png" alt="HelpDesk Logo" />
-      </div>
-
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-
-          <li><a href="#submit-ticket">Submit Ticket</a></li>
-
-          <li><a href="#faq">FAQ</a></li>
-
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="logo">
+            <img src="/images/profile-pic.png" alt="Your Name" />
+        </div>
+        <h1>Your Name</h1>
+        <p>Email: your.email@example.com | Phone: 123-456-7890</p>
+        <p>Location: Your City, State</p>
     </header>
 
     <!-- Main Content -->
 
     <main>
-      <!-- Submit a Ticket Section -->
+        <!-- Summary Section -->
 
-      <section id="submit-ticket">
-        <h2 style="text-align: center;">ECONOMIC AND ORGANISED CRIME OFFICE HELP DESK</h2>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>
+                A brief summary of your professional background, skills, and career objectives. 
+                (e.g., "Detail-oriented web developer with experience in building responsive web applications.")
+            </p>
+        </section>
 
-        <form id="ticket-form">
-          <label for="name">Name:</label>
+        <!-- Education Section -->
 
-          <input type="text" id="name" name="name" required />
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Your Degree</h3>
+                <p>University Name, Year of Graduation</p>
+            </div>
+            <!-- Add more education items as needed -->
+        </section>
 
-          <label for="email">Email:</label>
+        <!-- Experience Section -->
 
-          <input type="email" id="email" name="email" required />
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Job Title</h3>
+                <p>Company Name, Dates of Employment</p>
+                <ul>
+                    <li>Key responsibility or achievement.</li>
+                    <li>Key responsibility or achievement.</li>
+                </ul>
+            </div>
+            <!-- Add more experience items as needed -->
+        </section>
 
-          <label for="subject">Subject:</label>
+        <!-- Skills Section -->
 
-          <input type="text" id="subject" name="subject" required />
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+                <li>Skill 4</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
 
-          <label for="issue">Issue Description:</label>
 
-          <textarea id="issue" name="issue" rows="5" required></textarea>
-
-          <button type="submit">Submit Ticket</button>
-        </form>
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form id="contact-form">
+              <label for="contact-name">Name:</label>
+              <input type="text" id="contact-name" name="contact-name" required />
+      
+              <label for="contact-email">Email:</label>
+              <input type="email" id="contact-email" name="contact-email" required />
+      
+              <label for="contact-message">Message:</label>
+              <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+      
+              <button type="submit">Send Message</button>
+          </form>
       </section>
-
-      <!-- FAQ Section -->
-
-      <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-          <h3>How can I submit a ticket?</h3>
-
-          <p>
-            You can submit a ticket by filling out the form above with your
-            issue details.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h3>What is the response time for tickets?</h3>
-
-          <p>Our typical response time is 24-48 hours.</p>
-        </div>
-
-        <!-- Add more FAQ items as needed -->
-      </section>
+      
     </main>
 
     <!-- Footer -->
 
-    <footer id="contact">
-      <p>Contact us: support@helpdesk.com | 123-456-7890</p>
+    <footer>
+        <p>Thank you for reviewing my resume!</p>
     </footer>
 
-    <!-- partial -->
     <script src="./script.js"></script>
-  </body>
+</body>
 </html>
